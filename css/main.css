@@ -95,6 +95,7 @@ main {
   height: 1869px;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: -121px;
 }
 
 .block {
@@ -142,10 +143,14 @@ main {
   background-color: rgba(255, 255, 255, 0);
   border: 2px solid #FF1640;
   transition: all 0.5s ease;
+  color: rgb(167, 157, 157);
 }
 
 .block form button:hover{
   background-color: #ff1640;
+}
+.block form button:active{
+  background-color: black;
 }
 
 
@@ -264,9 +269,10 @@ hr {
 
 .left-child .child-befor::before {
   content: "1";
+  display: inline;
   border-radius: 50%;
   background-color: #ff0000;
-  padding: 15px;
+  padding: 15px 20px;
 
 }
 
@@ -283,6 +289,7 @@ hr {
   background-color: #BDBEC1;
   border: 2px solid #000;
   border-radius: 50%;
+  /* display: inline-block; */
   padding: 15px;
   margin-right: 5px;
   margin: 0;
@@ -305,7 +312,7 @@ hr {
   border: 2px solid #000;
   border-radius: 50%;
   padding: 5px;
-  display: inline-block;
+  display: block;
 }
 .unread{
   display: flex;
@@ -498,26 +505,35 @@ hr {
 /* footer */
 
 footer {
-  /* margin-top: -120px;
-  z-index: 1; */
+
   width: 100%;
   height: 600px;
-  background-image: url(../images/footer.png);
+  background-image: url(../images/footer\ img.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  transform: translateY(-120px);
 }
 
-.footer-span span {
+.footer-span{
+  background-image: url(../images/Screenshot_1.png);
   display: block;
+  background-color: #ff0000;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  transform: translateY(-70px);
+}
+.footer-span span {
+  display:block;
   background-color: #ff0000;
   width: 140px;
   height: 140px;
   border-radius: 50%;
   margin-left: auto;
   margin-right: auto;
-  transform: translateY(15px);
+  transform: translateY(20px);
 }
 
 
